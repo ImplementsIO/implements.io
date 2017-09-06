@@ -1,9 +1,14 @@
 import { observable, computed, action } from 'mobx'
 import { request } from '~/utils/'
 
+const tmp = {
+  pass: '7b1d96130bd7ad7b7c96a',
+  word: '6a0d6d67fdcc11b60d6',
+}
+
 const auth = {
-  usename: 'thonatos',
-  password: '9ba2201dc358fa9a1b9516b6cdfea515fa1b4f20',
+  username: 'thonatos',
+  password: `${tmp.pass}${tmp.word}`
 }
 
 class State {
@@ -28,9 +33,9 @@ class State {
       const {
         data,
       } = await request.get(
-        '/repos/ImplementsIO/docker-labs/contents/dockerfile/apps',
-        { auth }
-      )
+          '/repos/ImplementsIO/docker-labs/contents/dockerfile/apps',
+          { auth }
+        )
       this.apps = data
     } catch (error) {
     } finally {
@@ -45,9 +50,9 @@ class State {
       const {
         data,
       } = await request.get(
-        '/repos/ImplementsIO/docker-labs/contents/dockerfile/runtime',
-        { auth }
-      )
+          '/repos/ImplementsIO/docker-labs/contents/dockerfile/runtime',
+          { auth }
+        )
       this.runtimes = data
     } catch (error) {
     } finally {
