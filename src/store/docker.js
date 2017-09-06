@@ -8,7 +8,7 @@ const tmp = {
 
 const auth = {
   username: 'thonatos',
-  password: `${tmp.pass}${tmp.word}`
+  password: `${tmp.pass}${tmp.word}`,
 }
 
 class State {
@@ -33,9 +33,9 @@ class State {
       const {
         data,
       } = await request.get(
-          '/repos/ImplementsIO/docker-labs/contents/dockerfile/apps',
-          { auth }
-        )
+        '/repos/ImplementsIO/docker-labs/contents/dockerfile/apps',
+        { auth }
+      )
       this.apps = data
     } catch (error) {
     } finally {
@@ -50,9 +50,9 @@ class State {
       const {
         data,
       } = await request.get(
-          '/repos/ImplementsIO/docker-labs/contents/dockerfile/runtime',
-          { auth }
-        )
+        '/repos/ImplementsIO/docker-labs/contents/dockerfile/runtime',
+        { auth }
+      )
       this.runtimes = data
     } catch (error) {
     } finally {

@@ -42,13 +42,21 @@ class Home extends Component {
             <ul>
               <li>
                 ImplementsIO:{' '}
-                <a href="https://github.com/ImplementsIO">
+                <a
+                  href="https://github.com/ImplementsIO"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   https://github.com/ImplementsIO
                 </a>
               </li>
               <li>
                 Docker-labs:{' '}
-                <a href="https://github.com/ImplementsIO/docker-labs">
+                <a
+                  href="https://github.com/ImplementsIO/docker-labs"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   https://github.com/ImplementsIO/docker-labs
                 </a>
               </li>
@@ -57,7 +65,11 @@ class Home extends Component {
             <ul>
               <li>
                 issues:{' '}
-                <a href="https://github.com/ImplementsIO/docker-labs/issues">
+                <a
+                  href="https://github.com/ImplementsIO/docker-labs/issues"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   https://github.com/ImplementsIO/docker-labs/issues
                 </a>
               </li>
