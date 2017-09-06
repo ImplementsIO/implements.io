@@ -8,6 +8,8 @@ const CustomTable = ({ title, data, loading, langs }) => {
       title: langs['table_name'],
       dataIndex: 'name',
       key: 'name',
+      width: 160,
+      fixed: 'left'
     },
     {
       title: langs['table_path'],
@@ -38,6 +40,7 @@ const CustomTable = ({ title, data, loading, langs }) => {
         )
       }}
       style={{ marginBottom: '1em' }}
+      scroll={{ x: 1200 }}
       pagination={false}
       loading={loading}
       rowKey="sha"
