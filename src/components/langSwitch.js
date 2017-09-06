@@ -41,8 +41,7 @@ class Language extends Component {
     const menu = (
       <Menu onSelect={this.onSelect} style={{ textAlign: 'center' }}>
         {
-          LANGS.map(v => {
-            console.log(v)
+          LANGS.map(v => {            
             return (
               <Item key={v}>
                 <ICon className={LANGS_ICON[v]} text={LANGS_TEXT[v]} />
@@ -54,7 +53,7 @@ class Language extends Component {
     )
 
     return (
-      <Dropdown overlay={menu} placement="bottomCenter">
+      <Dropdown overlay={menu} trigger={['click']} placement="bottomCenter">
         <Button style={{ border: 'none' }}>
           <ICon className={LANGS_ICON[locale]} text={LANGS_TEXT[locale]} />
         </Button>
