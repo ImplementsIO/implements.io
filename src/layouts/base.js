@@ -17,22 +17,18 @@ const Container = ({ children, className }) => {
   )
 }
 
-
-
 const NavMenu = ({ menus, width }) => {
   if (!menus) {
     return null
   }
 
   const largeSceen = (width || 0) > 780
-  const mode = largeSceen ? 'horizontal' : ''  
-  const className = largeSceen ? styles.header_menu : styles.header_menu_dropdown  
+  const mode = largeSceen ? 'horizontal' : ''
+  const className = largeSceen
+    ? styles.header_menu
+    : styles.header_menu_dropdown
   const menu = (
-    <Menu
-      theme="light"
-      mode={mode}
-      className={className}
-    >
+    <Menu theme="light" mode={mode} className={className}>
       {menus.map((v, k) => {
         const { name, href } = v
         return (
@@ -48,13 +44,11 @@ const NavMenu = ({ menus, width }) => {
 
   return largeSceen
     ? menu
-    : (
-      <Dropdown overlay={menu} trigger={['click']}>
+    : <Dropdown overlay={menu} trigger={['click']}>
         <a className="ant-dropdown-link">
           Home <Icon type="down" />
         </a>
       </Dropdown>
-    )
 }
 
 class Base extends Component {
@@ -91,14 +85,14 @@ class Base extends Component {
           <Container>
             {breadcrumbs
               ? <Breadcrumb style={{ margin: '12px 0' }}>
-                {_breadcrumbs.map((v, k) => {
-                  return (
-                    <Breadcrumb.Item key={k}>
-                      {v}
-                    </Breadcrumb.Item>
-                  )
-                })}
-              </Breadcrumb>
+                  {_breadcrumbs.map((v, k) => {
+                    return (
+                      <Breadcrumb.Item key={k}>
+                        {v}
+                      </Breadcrumb.Item>
+                    )
+                  })}
+                </Breadcrumb>
               : null}
             <div className={styles.content_box}>
               {children}
@@ -112,7 +106,7 @@ class Base extends Component {
             <div>
               <p className={styles.footer_desc}>
                 Copyright © 2017 . <br /> Maintained By MT-Libraries .
-                </p>
+              </p>
             </div>
           </Container>
         </Footer>

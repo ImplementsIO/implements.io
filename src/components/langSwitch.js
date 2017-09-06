@@ -9,16 +9,14 @@ const ICon = ({ className, text }) => {
       <svg className="icon" aria-hidden="true">
         <use xlinkHref={className} />
       </svg>
-      <span style={{ marginLeft: '0.5em' }}>{text}</span>
+      <span style={{ marginLeft: '0.5em' }}>
+        {text}
+      </span>
     </div>
-
   )
 }
 
-const LANGS = [
-  'en_us',
-  'zh_cn',
-]
+const LANGS = ['en_us', 'zh_cn']
 
 const LANGS_TEXT = {
   zh_cn: 'CHINESE',
@@ -31,7 +29,6 @@ const LANGS_ICON = {
 }
 
 class Language extends Component {
-
   onSelect = ({ key }) => {
     this.props.changeLanguageTo(key)
   }
@@ -40,15 +37,13 @@ class Language extends Component {
     const { locale } = this.props
     const menu = (
       <Menu onSelect={this.onSelect} style={{ textAlign: 'center' }}>
-        {
-          LANGS.map(v => {            
-            return (
-              <Item key={v}>
-                <ICon className={LANGS_ICON[v]} text={LANGS_TEXT[v]} />
-              </Item>
-            )
-          })
-        }
+        {LANGS.map(v => {
+          return (
+            <Item key={v}>
+              <ICon className={LANGS_ICON[v]} text={LANGS_TEXT[v]} />
+            </Item>
+          )
+        })}
       </Menu>
     )
 

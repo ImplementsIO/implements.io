@@ -9,7 +9,7 @@ const CustomTable = ({ title, data, loading, langs }) => {
       dataIndex: 'name',
       key: 'name',
       width: 160,
-      fixed: 'left'
+      fixed: 'left',
     },
     {
       title: langs['table_path'],
