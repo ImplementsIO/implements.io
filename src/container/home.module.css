@@ -1,0 +1,16 @@
+.post {
+  margin-top: 1em;
+}
+
+.post h3 {
+  padding: 0.6em 0;
+}
+
+.post ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+.post p {
+  padding: 0.4em 0;
+}

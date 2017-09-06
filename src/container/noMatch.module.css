@@ -1,0 +1,29 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 20%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -200px;
+}
+
+.info h1 {
+  padding-right: 1rem;
+}
+
+.detail {
+  border-left: 1px solid #eee;
+  padding-left: 1rem;
+}
+
+.stack {
+  color: #757575;
+  font-size: 0.7rem;
+}

@@ -1,0 +1,60 @@
+/* base */
+
+.layout {
+  background: rgba(239, 239, 239, 0.29);
+}
+
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.header {
+  background: #fff;
+  height: 65px;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 0 1em;
+}
+
+.header_menu {
+  height: 100%;
+  line-height: 62px;
+  border-bottom: none;
+}
+
+.content {
+  padding: 1em 0 2em 0;
+}
+
+.content_box {
+  background: #fff;
+  padding: 2em;
+}
+
+.footer {
+  background: #fff;
+  padding: 3em 1em;
+}
+
+/* custom */
+
+.logo {
+  width: 80px;
+  height: 64px;
+  margin-right: 8px;
+  padding: 8px 0;
+  float: left;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.footer_desc {
+  display: inline-block;
+  padding: 0 2em 0.5em 0;
+  line-height: 1.8;
+  border-bottom: 1px solid rgba(239, 239, 239, 0.5);
+}

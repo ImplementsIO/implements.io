@@ -1,0 +1,8 @@
+{
+  "administrator": "Suyi",
+  "table_name": "Name",
+  "table_path": "Path",
+  "table_url": "Url",
+  "docker_app": "Docker App",
+  "docker_runtime": "Docker Runtime"
+}

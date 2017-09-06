@@ -1,0 +1,8 @@
+{
+  "administrator": "苏依",
+  "table_name": "项目",
+  "table_path": "路径",
+  "table_url": "地址",
+  "docker_app": "Docker App",
+  "docker_runtime": "Docker Runtime"
+}
