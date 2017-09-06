@@ -1,14 +1,9 @@
 import { observable, action } from 'mobx'
 import { request } from '~/utils/'
 
-const tmp = {
-  pass: '7b1d96130bd7ad7b7c96a',
-  word: '6a0d6d67fdcc11b60d6',
-}
-
 const auth = {
   username: 'thonatos',
-  password: `${tmp.pass}${tmp.word}`,
+  password: ['7b1d96130bd7ad7b7c96a', '6a0d6d67fdcc11b60d6'].join(''),
 }
 
 class State {
