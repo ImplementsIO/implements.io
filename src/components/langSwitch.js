@@ -55,7 +55,7 @@ class Language extends Component {
 
     return (
       <Dropdown overlay={menu} placement="bottomCenter">
-        <Button>
+        <Button style={{ border: 'none' }}>
           <ICon className={LANGS_ICON[locale]} text={LANGS_TEXT[locale]} />
         </Button>
       </Dropdown>
