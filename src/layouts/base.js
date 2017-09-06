@@ -104,8 +104,26 @@ class Base extends Component {
         <Footer className={styles.footer}>
           <Container>
             <div>
+              <iframe
+                title="ghbtns"
+                frameBorder="0"
+                scrolling="0"
+                width="160px"
+                height="20px"
+                src="https://ghbtns.com/github-btn.html?user=ImplementsIO&repo=docker-labs&type=fork&count=true"
+              />
+            </div>
+            <div>
               <p className={styles.footer_desc}>
-                Copyright © 2017 . <br /> Maintained By MT-Libraries .
+                Copyright © 2017 . <br /> Maintained By{' '}
+                <a
+                  href="https://github.com/ImplementsIO"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  ImplementsIO
+                </a>{' '}
+                .
               </p>
             </div>
           </Container>
