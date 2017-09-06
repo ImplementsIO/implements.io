@@ -1,5 +1,4 @@
-[WIP] react-mobx-bootstrap
-
+React-mobx-bootstrap
 
 ## Feature
 - react-router-v4
@@ -10,6 +9,5 @@
 - root-import
 
 ## Demo
-coming soon.
 
-
+- [https://implements.io/](https://implements.io/)
