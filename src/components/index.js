@@ -1,3 +1,5 @@
 import LangSwitch from './langSwitch'
+import PushEvents from './pushEvents'
+import Markdown from './markdown'
 
-export { LangSwitch }
+export { PushEvents, LangSwitch, Markdown }
