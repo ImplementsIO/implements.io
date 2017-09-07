@@ -2,6 +2,7 @@
   "name": "implementsio-react",
   "version": "0.1.0",
   "private": true,
+  "home": "https://implements.io/",
   "dependencies": {
     "antd": "^2.12.5",
     "autoprefixer": "7.1.1",
@@ -51,6 +52,7 @@
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.9",
     "react-helmet": "^5.1.3",
+    "react-markdown": "^2.5.0",
     "react-router-dom": "^4.1.2",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.3",
