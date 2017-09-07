@@ -105,12 +105,12 @@ class Base extends Component {
           <Container>
             <div>
               <iframe
-                title="ghbtns"
+                title="star"
                 frameBorder="0"
                 scrolling="0"
                 width="160px"
                 height="20px"
-                src="https://ghbtns.com/github-btn.html?user=ImplementsIO&repo=docker-labs&type=fork&count=true"
+                src="https://ghbtns.com/github-btn.html?user=ImplementsIO&repo=docker-labs&type=star&count=true"
               />
             </div>
             <div>
