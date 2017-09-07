@@ -30,7 +30,7 @@ class Docker extends Component {
         }
       >
         <Helmet>
-          <title>Docker</title>
+          <title>Docker - ImplementsIO</title>
         </Helmet>
         <Switch>
           {childRoutes.map((route, index) => {

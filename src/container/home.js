@@ -54,7 +54,7 @@ class Home extends Component {
         }
       >
         <Helmet>
-          <title>Home</title>
+          <title>ImplementsIO</title>
         </Helmet>
         <div>
           <Row gutter={16}>
