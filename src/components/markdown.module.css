@@ -1,0 +1,40 @@
+.markdown {
+  margin-top: 1em;
+}
+
+.markdown h2 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown ul {
+  list-style: disc;
+  padding-left: 40px;
+  margin-bottom: 1em;
+}
+
+.markdown p {
+  line-height: 1.8;
+  margin-bottom: 1em;
+}
+
+.markdown blockquote {
+  margin-bottom: 16px;
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown blockquote > :first-child {
+  margin-top: 0;
+}
+
+.markdown blockquote > :last-child {
+  margin-bottom: 0;
+}
