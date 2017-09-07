@@ -15,10 +15,23 @@ class State {
 
   @observable runtimes_loading = false
 
+  @observable events = []
+
   constructor(root) {
     this.root = root
+    this.loadEvents()
     this.loadApps()
     this.loadRuntimes()
+  }
+
+  @action
+  loadEvents = async () => {
+    try {
+      const {
+        data,
+      } = await request.get('/repos/ImplementsIO/docker-labs/events', { auth })
+      this.events = data
+    } catch (error) {}
   }
 
   @action
