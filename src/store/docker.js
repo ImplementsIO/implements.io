@@ -35,16 +35,14 @@ class State {
         data,
       } = await request.get('/repos/ImplementsIO/docker-labs/events', { auth })
       this.events = data
-    } catch (error) { }
+    } catch (error) {}
   }
 
   @action
   loadApps = async () => {
     this.apps_loading = true
     try {
-      const {
-        data,
-      } = await repo.getContents(null, 'dockerfile/apps')
+      const { data } = await repo.getContents(null, 'dockerfile/apps')
       this.apps = data
     } catch (error) {
     } finally {
@@ -56,9 +54,7 @@ class State {
   loadRuntimes = async () => {
     this.runtimes_loading = true
     try {
-      const {
-        data,
-      } = await repo.getContents(null, 'dockerfile/runtime')
+      const { data } = await repo.getContents(null, 'dockerfile/runtime')
       this.runtimes = data
     } catch (error) {
     } finally {
