@@ -10,7 +10,7 @@ const about = `
 
 > Collect Dockerfile(s) & docker-compose files for Development / Production environment.   
 
-This project collects dockerfile(s) & docker-compose files, help those who ara not familiar with docker.
+This project collects dockerfile(s) & docker-compose files, helping those who ara not familiar with docker.
 
 PR is welcome. 😀
   
