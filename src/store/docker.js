@@ -1,10 +1,14 @@
 import { observable, action } from 'mobx'
+import Github from 'github-api'
 import { request } from '~/utils/'
 
 const auth = {
   username: 'thonatos',
   password: ['7b1d96130bd7ad7b7c96a', '6a0d6d67fdcc11b60d6'].join(''),
 }
+
+const gh = new Github(auth)
+const repo = gh.getRepo('ImplementsIO/docker-labs')
 
 class State {
   @observable apps = []
@@ -31,7 +35,7 @@ class State {
         data,
       } = await request.get('/repos/ImplementsIO/docker-labs/events', { auth })
       this.events = data
-    } catch (error) {}
+    } catch (error) { }
   }
 
   @action
@@ -40,10 +44,7 @@ class State {
     try {
       const {
         data,
-      } = await request.get(
-        '/repos/ImplementsIO/docker-labs/contents/dockerfile/apps',
-        { auth }
-      )
+      } = await repo.getContents(null, 'dockerfile/apps')
       this.apps = data
     } catch (error) {
     } finally {
@@ -57,10 +58,7 @@ class State {
     try {
       const {
         data,
-      } = await request.get(
-        '/repos/ImplementsIO/docker-labs/contents/dockerfile/runtime',
-        { auth }
-      )
+      } = await repo.getContents(null, 'dockerfile/runtime')
       this.runtimes = data
     } catch (error) {
     } finally {
