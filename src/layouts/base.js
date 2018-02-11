@@ -56,6 +56,7 @@ class Base extends Component {
     const containerWidth = this.props.containerWidth
     const { children, menus, breadcrumbs, lang } = this.props
     const _breadcrumbs = breadcrumbs ? ['Home'].concat(breadcrumbs) : ['Home']
+    const fullYear = (new Date()).getFullYear()
 
     return (
       <Layout className={styles.layout}>
@@ -115,7 +116,7 @@ class Base extends Component {
             </div>
             <div>
               <p className={styles.footer_desc}>
-                Copyright © 2017 . <br /> Maintained By{' '}
+                Copyright © 2017 - {fullYear} . <br /> Maintained By{' '}
                 <a
                   href="https://github.com/ImplementsIO"
                   rel="noopener noreferrer"
