@@ -19,6 +19,14 @@ class State {
       name: 'Docker',
       href: '/docker',
     },
+    {
+      name: 'Tutorials',
+      href: '#',
+    },    
+    {
+      name: 'Projects',
+      href: '#',
+    },        
   ]
 
   constructor(root) {
